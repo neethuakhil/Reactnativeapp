@@ -48,7 +48,7 @@ export default function App() {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
+    <GestureHandlerRootView style={styles.container}>
       <View style={styles.imageContainer}>
         <ImageViewer
           placeholderImageSource={PlaceholderImage}
@@ -95,7 +95,7 @@ export default function App() {
       )}
 
       <StatusBar style='auto' />
-    </SafeAreaView>
+    </GestureHandlerRootView>
   );
 }
 const styles = StyleSheet.create({
