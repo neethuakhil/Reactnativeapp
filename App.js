@@ -9,7 +9,7 @@ import IconButton from './IconButton';
 import EmojiList from './EmojiList';
 import EmojiPicker from './EmojiPicker';
 import EmojiSticker from './EmojiSticker';
-
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 const PlaceholderImage = require('./assets/img.png');
 
 export default function App() {
