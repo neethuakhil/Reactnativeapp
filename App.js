@@ -9,7 +9,7 @@ import IconButton from './IconButton';
 import EmojiList from './EmojiList';
 import EmojiPicker from './EmojiPicker';
 import EmojiSticker from './EmojiSticker';
-
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 const PlaceholderImage = require('./assets/img.png');
 
 export default function App() {
@@ -49,7 +49,7 @@ export default function App() {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
+    <GestureHandlerRootView style={styles.container}>
       <View style={styles.imageContainer}>
         <ImageViewer
           placeholderImageSource={PlaceholderImage}
@@ -96,7 +96,7 @@ export default function App() {
       )}
 
       <StatusBar style='auto' />
-    </SafeAreaView>
+    </GestureHandlerRootView>
   );
 }
 const styles = StyleSheet.create({
